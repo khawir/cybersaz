@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Logo } from "@/components/ui/Logo";
 
 const SERVICES_LINKS = [
   { href: "/services/security-consultancy", label: "Security Consultancy" },
@@ -60,7 +60,7 @@ export function Footer() {
     <footer className="site-footer">
       <div className="cols">
         <div>
-          <Logo showTagline={false} className="footer-logo" />
+          <Image src="/logo.png" alt="CybrixAZ — Secure Every Bit" width={620} height={544} className="footer-logo" />
           <p
             style={{
               fontSize: 14,

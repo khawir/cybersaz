@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Corners } from "@/components/ui/Corners";
-import { LogoMark } from "@/components/ui/LogoMark";
+import { Logo } from "@/components/ui/Logo";
 import { MobileNav } from "@/components/layout/MobileNav";
+import { NavScrollShadow } from "@/components/layout/NavScrollShadow";
 import { getOfferingsByKind, getOfferingHref } from "@/content/offerings";
 import {
   WrenchIcon,
@@ -27,12 +28,9 @@ const NAV_LINKS = [
 export function Header() {
   return (
     <nav className="nav sticky top-0 z-20 bg-(--color-bg) border-b border-(--color-divider)">
-      <Link
-        href="/"
-        style={{ display: "flex", alignItems: "center", gap: 10, marginRight: "auto", textDecoration: "none" }}
-      >
-        <LogoMark className="nav-brand-mark" />
-        <span className="nav-brand-text">CybrixAZ</span>
+      <NavScrollShadow />
+      <Link href="/" style={{ display: "flex", alignItems: "center", marginRight: "auto", textDecoration: "none" }}>
+        <Logo className="nav-brand-lockup" showTagline={false} />
       </Link>
 
       <div className="nav-links" style={{ display: "flex", alignItems: "center", gap: "var(--space-4)" }}>
