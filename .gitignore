@@ -1,2 +1,22 @@
 .claude/settings.local.json
 .DS_Store
+
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+*.tsbuildinfo
+next-env.d.ts
+
+# production
+/build
+
+# env
+.env*
+!.env.example
+
+# misc
+*.pem
+npm-debug.log*
