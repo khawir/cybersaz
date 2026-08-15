@@ -33,7 +33,7 @@ export function Header() {
         <Logo className="nav-brand-lockup" showTagline={false} />
       </Link>
 
-      <div className="nav-links" style={{ display: "flex", alignItems: "center", gap: "var(--space-4)" }}>
+      <div className="nav-links">
         {NAV_LINKS.map((link) => (
           <div key={link.href} className="nav-item">
             <Link href={link.href}>
