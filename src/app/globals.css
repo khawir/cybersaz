@@ -274,6 +274,8 @@ textarea.input { min-height: 90px; resize: vertical; }
 .nav-dropdown a { padding: 9px 10px; font-size: 13px; border-radius: var(--radius-sm); }
 .nav-dropdown a:hover { background: color-mix(in srgb, var(--color-text) 6%, transparent); color: var(--color-accent); }
 
+.nav-links { display: flex; align-items: center; gap: var(--space-4); }
+
 /* mobile nav toggle */
 .nav-toggle {
   display: none; align-items: center; justify-content: center;
